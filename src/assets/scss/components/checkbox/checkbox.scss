@@ -1,0 +1,93 @@
+.checkbox {
+  &__item {
+    margin-bottom: rem($gap-medium);
+
+    @include resetting-vertical-indentation-of-last;
+  }
+
+  &__input {
+    @include hidden-element;
+  }
+
+  &__input:checked + &__icon {
+    color: $jungle-green;
+    border: rem(2px) solid $jungle-green;
+  }
+  &__input:checked + &__icon svg {
+    opacity: 1;
+  }
+  &__input:checked:disabled + &__icon {
+    color: $bombay;
+  }
+  &__input:disabled + &__label {
+    cursor: default;
+  }
+  &__input:disabled + &__label & {
+    &__text {
+      opacity: 0.5;
+    }
+  }
+  &__input:disabled + &__icon {
+    border: rem(1px) solid $bombay;
+    background: $bombay;
+  }
+
+  &__inner {
+    margin-right: rem($gap-smaller);
+    margin-left: rem($gap-smaller);
+
+    @include resetting-horizontal-indentation-of-first;
+    @include resetting-horizontal-indentation-of-last;
+  }
+  &__label {
+    display: inline-flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    margin-bottom: 0;
+  }
+  &__label:hover & {
+    &__icon {
+      border-color: $jungle-green;
+    }
+  }
+  
+  &__icon {
+    $size: 24px;
+
+    position: relative;
+
+    flex-shrink: 0;
+
+    display: block;
+
+    transition: color $transition-duration $transition-function,
+      border-color $transition-duration $transition-function,
+      background-color $transition-duration $transition-function;
+
+    width: rem($size);
+    height: rem($size);
+
+    color: transparent;
+    border: rem(2px) solid $bombay;
+    border-radius: $border-radius-small;
+    background: transparent;
+
+    svg {
+      margin: auto;
+
+      transition: opacity $transition-duration $transition-function;
+      content: "";
+
+      opacity: 0;
+      color: $white;
+    }
+  }
+
+  &__text {
+    @include text-small;
+
+    color: $color-text-primary;
+  }
+}
