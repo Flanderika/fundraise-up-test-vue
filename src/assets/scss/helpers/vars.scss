@@ -1,0 +1,88 @@
+// Color
+$shark: #2f2f30;
+$nevada: #6c6d6f;
+
+$white: #ffffff;
+$alabaster: #fafafa;
+$concrete: #f3f3f3;
+$mercury: #e5e5e5;
+$iron: #dbdcde;
+$iron2: #d7d8da;
+$bombay: #a9abae;
+$oslo-gray: #919293;
+$island-spice: #fffbec;
+
+$jungle-green: #2eb670;
+$jungle-green2: #2aa565;
+$green-haze: #00a651;
+
+$azure-radiance: #009ffd;
+$medium-purple: #6665dd;
+$persian-blue: #2220b9;
+$color-text-primary: $shark;
+$color-primary: $shark;
+// Font
+
+$font-family-default: "Helvetica", sans-serif;
+$font-family-custom: "WorkSans";
+$font-family-custom-alternate: "SourceCodePro";
+
+$font-family: $font-family-custom, $font-family-default;
+$font-family-alternate: $font-family-custom-alternate, $font-family-default;
+
+$font-path: "./assets/fonts/";
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+
+$font-size-big: 24px;
+$font-size-normal: 16px;
+$font-size-small: 14px;
+
+$font-size-base: $font-size-normal;
+
+$line-height-big: 32px;
+$line-height-normal: 24px;
+$line-height-small: 20px;
+
+$border-radius: 8px;
+$border-radius-small: 6px;
+
+$border-size: 1px;
+
+$border-default: $border-size solid $iron;
+$border-secondary: $border-size solid $iron2;
+
+// Shadow
+$box-shadow: 1px 3px 3px rgba(62, 63, 64, 0.1);
+$button-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+
+// Breakpoints
+$screen-desktop-huge: "(min-width: 1921px)";
+$screen-desktop-large: "(min-width: 1440px)";
+$screen-desktop: "(min-width: 1280px)";
+$screen-laptop: "(min-width: 1024px)";
+$screen-tablet: "(min-width: 768px)";
+
+$screen-device-only: "(max-width: 1279px)";
+$screen-small-device-only: "(max-width: 1023px)";
+$screen-mobile-only: "(max-width: 767px)";
+
+// Gap
+$gap-very-big: 44px;
+$gap-big: 40px;
+$gap-average: 32px;
+$gap-middling: 28px;
+$gap-normal: 24px;
+$gap-medium: 16px;
+$gap-small: 14px;
+$gap-smaller: 12px;
+$gap-smallest: 9px;
+$gap-little: 8px;
+$gap-mini: 7px;
+$gap-least: 4px;
+
+// Transition
+
+$transition-duration: 0.3s;
+$transition-function: ease-in-out;
