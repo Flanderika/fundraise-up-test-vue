@@ -2,3 +2,12 @@
 @use "sass:list";
 
 @import '~normalize.css/normalize';
+
+@import "@/assets/scss/helpers/vars";
+@import "@/assets/scss/helpers/functions";
+@import "@/assets/scss/helpers/mixins";
+@import "@/assets/scss/helpers/helpers";
+
+@import "@/assets/scss/fonts";
+
+@import "@/assets/scss/base/common";

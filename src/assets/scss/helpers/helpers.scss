@@ -1,0 +1,11 @@
+.hide-mob {
+  @media #{$screen-small-device-only} {
+    display: none !important;
+  }
+}
+
+.hide-desc {
+  @media #{$screen-laptop} {
+    display: none !important;
+  }
+}
