@@ -1,0 +1,11 @@
+.link {
+  text-decoration: underline;
+
+  color: $medium-purple;
+
+  transition: color $transition-duration $transition-function;
+
+  &:hover {
+    color: $persian-blue;
+  }
+}

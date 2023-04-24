@@ -1,0 +1,23 @@
+.text-with-icon {
+  display: flex;
+  align-items: center;
+
+  &--green & {
+    &__icon {
+      color: $green-haze;
+    }
+
+    &__text {
+      color: $green-haze;
+    }
+  }
+
+  &__icon {
+    display: flex;
+  }
+
+  &__icon + &__text,
+  &__text + &__icon {
+    margin-left: rem($gap-little);
+  }
+}
