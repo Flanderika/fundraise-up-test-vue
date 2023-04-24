@@ -1,0 +1,68 @@
+.button {
+  @include text-normal($font-weight-regular);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  
+  padding: $gap-smaller $gap-normal;
+  width: 100%;
+
+  transition: color $transition-duration $transition-function,
+    border-color $transition-duration $transition-function,
+    background-color $transition-duration $transition-function,
+    box-shadow $transition-duration $transition-function;
+
+  border: rem(1px) solid transparent;
+  border-radius: $border-radius-small;
+  outline: none;
+
+  &--primary {
+    color: $white;
+    border-color: $jungle-green;
+    background-color: $jungle-green;
+    &:hover {
+      border-color: $jungle-green2;
+      background-color: $jungle-green2;
+      box-shadow: $button-box-shadow;
+    }
+  }
+
+  &--secondary {
+    color: $color-text-primary;
+    border-color: $bombay;
+    background-color: $white;
+    &:hover {
+      border-color: $jungle-green2;
+      box-shadow: $button-box-shadow;
+    }
+  }
+
+  &--simple {
+    padding: 0;
+
+    background: transparent;
+  }
+  &--simple & {
+    &__icon {
+      color: $nevada;
+    }
+  }
+  &--simple:hover & {
+    &__icon {
+      color: $jungle-green2;
+    }
+  }
+
+  &__text + &__icon {
+    margin-left: $gap-little;
+  }
+
+  &__icon {
+    display: flex;
+
+    transition: color $transition-duration $transition-function;
+  }
+}
