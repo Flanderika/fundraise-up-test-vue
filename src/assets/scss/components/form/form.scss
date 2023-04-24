@@ -1,0 +1,45 @@
+.form {
+  &__group {
+    margin-bottom: $gap-average;
+    @media #{$screen-laptop} {
+      display: flex;
+      align-items: flex-start;
+
+      margin-bottom: rem($gap-normal);
+    }
+
+    &--centered {
+      align-items: center;
+    }
+  }
+
+  &__label {
+    display: block;
+
+    margin-bottom: $gap-smaller;
+    @media #{$screen-laptop} {
+      flex-shrink: 0;
+
+      text-align: right;
+
+      width: rem(148px);
+      margin-right: rem($gap-medium);
+      margin-bottom: 0;
+    }
+  }
+
+  &__inputs {
+    flex-grow: 1;
+
+
+    &-item {
+      margin-bottom: rem($gap-medium);
+
+      @include resetting-vertical-indentation-of-last;
+    }
+  }
+
+  &__input {
+    display: flex;
+  }
+}

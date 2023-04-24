@@ -5,6 +5,7 @@
 
   list-style: none;
 }
+
 @mixin resetting-vertical-indentation-of-first {
   &:first-child {
     margin-top: 0;
@@ -59,6 +60,15 @@
 
 @mixin text-small($font-weight: null) {
   $font-size: $font-size-small;
+
+  font-size: $font-size;
+  font-weight: $font-weight;
+
+  line-height: $line-height-small;
+}
+
+@mixin text-little($font-weight: null) {
+  $font-size: $font-size-little;
 
   font-size: $font-size;
   font-weight: $font-weight;

@@ -1,0 +1,5 @@
+.list {
+  &--resetted {
+    @include list-reset;
+  }
+}

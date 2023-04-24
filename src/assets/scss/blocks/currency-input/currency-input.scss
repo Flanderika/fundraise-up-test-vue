@@ -1,0 +1,13 @@
+.currency-input {
+  display: flex;
+  width: 100%;
+
+  &__select {
+    max-width: rem(80px);
+  }
+
+  &__input + &__select,
+  &__select + &__input {
+    margin-left: $gap-normal;
+  }
+}
