@@ -1,0 +1,18 @@
+.buttons {
+  &__list {
+    @media #{$screen-laptop} {
+      display: flex;
+    }
+  }
+
+  &__item {
+    margin-bottom: $gap-medium;
+
+    @media #{$screen-laptop} {
+      margin-right: $gap-medium;
+      margin-bottom: 0;
+    }
+    @include resetting-vertical-indentation-of-last;
+    @include resetting-horizontal-indentation-of-last;
+  }
+}

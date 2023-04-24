@@ -1,0 +1,13 @@
+.icon {
+  $size: 18px;
+
+  width: rem($size);
+  height: rem($size);
+
+  &--check {
+    $size: 20px;
+
+    width: rem($size);
+    height: rem($size);
+  }
+}
