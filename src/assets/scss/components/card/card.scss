@@ -1,0 +1,122 @@
+.card {
+  border-bottom: rem(1px) solid $iron;
+  background-color: $white;
+
+  @media #{$screen-laptop} {
+    margin-bottom: rem($gap-normal);
+
+    border: rem(1px) solid $iron;
+
+    @include resetting-vertical-indentation-of-last;
+  }
+
+  &--rounded {
+    @media #{$screen-laptop} {
+      border-radius: $border-radius;
+    }
+  }
+  &--shadow {
+    @media #{$screen-laptop} {
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &__row {
+    @media #{$screen-laptop} {
+      display: flex;
+      align-items: center;
+    }
+
+    &--space-between {
+      @media #{$screen-laptop} {
+        justify-content: space-between;
+        gap: rem($gap-average);
+      }
+    }
+  }
+
+  &__col {
+    margin-bottom: rem($gap-little);
+
+    @include resetting-vertical-indentation-of-last;
+
+    @media #{$screen-laptop} {
+      margin-right: rem($gap-big);
+      margin-bottom: 0;
+
+      @include resetting-horizontal-indentation-of-last;
+    }
+  }
+
+  &__details {
+    padding: rem($gap-smaller) 0;
+
+    border-bottom: $border-secondary;
+
+    @media #{$screen-laptop} {
+      margin-right: rem($gap-average);
+      margin-bottom: rem($gap-little);
+      padding: 0;
+      padding-right: rem($gap-average);
+
+      border-right: $border-secondary;
+      border-bottom: 0;
+
+      &:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        border: 0;
+      }
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border: 0;
+    }
+
+    &-title {
+      @include text-small($font-weight-regular);
+      margin-bottom: rem(2px);
+
+      color: $nevada;
+    }
+  }
+
+  &__header {
+    padding-top: rem(33px);
+  }
+
+  &__body {
+    &--gutter {
+      padding: rem($gap-normal) rem($gap-medium);
+
+      border-bottom: $border-default;
+
+      @media #{$screen-laptop} {
+        padding: rem($gap-middling) rem($gap-average);
+      }
+    }
+  }
+
+  &__footer {
+    padding: rem($gap-normal) rem($gap-medium);
+
+    border-radius: inherit;
+
+    @media #{$screen-laptop} {
+      padding: rem($gap-medium) rem($gap-average);
+    }
+
+    &--gray {
+      background-color: $alabaster;
+    }
+
+    &--yellow {
+      background-color: $island-spice;
+    }
+  }
+}

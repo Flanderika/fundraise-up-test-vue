@@ -1,0 +1,21 @@
+.donation-id {
+  font-family: $font-family-alternate;
+  @media #{$screen-small-device-only} {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    color: $oslo-gray;
+    @media #{$screen-laptop} {
+      margin-bottom: rem($gap-least);
+    }
+  }
+
+  &__title + &__value,
+  &__value + &__title {
+    @media #{$screen-small-device-only} {
+      margin-left: rem($gap-least);
+    }
+  }
+}

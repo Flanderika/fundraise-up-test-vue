@@ -1,0 +1,25 @@
+.donation-info {
+  &__row {
+    margin-bottom: $gap-least;
+
+    @include resetting-vertical-indentation-of-last;
+  }
+
+  &__value {
+    &-main {
+      @include text-big($font-weight-regular);
+
+      color: $green-haze;
+    }
+
+    &-sub {
+      @include text-normal($font-weight-regular);
+      color: $nevada;
+    }
+
+    &-main + &-sub,
+    &-sub + &-main {
+      margin-left: $gap-smallest;
+    }
+  }
+}
