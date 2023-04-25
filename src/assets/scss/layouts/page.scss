@@ -1,0 +1,9 @@
+.page {
+  padding-bottom: $gap-big;
+  @media #{$screen-laptop} {
+    max-width: rem(1224px);
+
+    margin: 0 auto;
+    padding: rem(53px) rem($gap-normal);
+  }
+}
