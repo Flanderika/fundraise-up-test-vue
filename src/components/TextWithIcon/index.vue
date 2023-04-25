@@ -4,7 +4,7 @@
       <base-icon :iconName="iconPrepend" />
     </div>
 
-    <div class="text-with-icon__text">
+    <div :class="`text-with-icon__text text-with-icon__text--size-${textSize}`">
       <slot />
     </div>
 
@@ -32,6 +32,13 @@ export default {
     },
     iconAppend: {
       type: String,
+    },
+    textSize: {
+      type: String,
+      validator: function (value) {
+        return ["small", "normal"].includes(value);
+      },
+      default: "normal",
     },
   },
 };

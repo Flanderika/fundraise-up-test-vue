@@ -26,7 +26,11 @@
       display: flex;
       align-items: center;
     }
-
+    &--wrap {
+      @media #{$screen-laptop} {
+        flex-wrap: wrap;
+      }
+    }
     &--space-between {
       @media #{$screen-laptop} {
         justify-content: space-between;
@@ -36,6 +40,8 @@
   }
 
   &__col {
+    flex-shrink: 0;
+    
     margin-bottom: rem($gap-little);
 
     @include resetting-vertical-indentation-of-last;

@@ -59,7 +59,8 @@
     &__wrap {
       padding: 0;
       height: initial;
-
+      max-width: rem(336px);
+      
       border: 0;
       background: transparent;
     }
@@ -95,7 +96,7 @@
     outline: none;
     border: none;
     background-color: transparent;
-    
+
     &::placeholder {
       color: $nevada;
     }

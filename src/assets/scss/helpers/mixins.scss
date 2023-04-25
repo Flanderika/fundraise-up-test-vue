@@ -35,43 +35,50 @@
 
   clip: rect(0 0 0 0);
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: rem(1px);
+  height: rem(1px);
+  margin: rem(-1px);
 }
 
 // Text
 @mixin text-big($font-weight: null) {
   $font-size: $font-size-big;
 
-  font-size: $font-size;
+  font-size: rem($font-size);
   font-weight: $font-weight;
-  line-height: $line-height-big;
+  line-height: rem($line-height-big);
 }
 
 @mixin text-normal($font-weight: null) {
   $font-size: $font-size-normal;
 
-  font-size: $font-size;
+  font-size: rem($font-size);
   font-weight: $font-weight;
 
-  line-height: $line-height-normal;
+  line-height: rem($line-height-normal);
 }
 
 @mixin text-small($font-weight: null) {
   $font-size: $font-size-small;
 
-  font-size: $font-size;
+  font-size: rem($font-size);
   font-weight: $font-weight;
 
-  line-height: $line-height-small;
+  line-height: rem($line-height-small);
 }
 
 @mixin text-little($font-weight: null) {
   $font-size: $font-size-little;
 
-  font-size: $font-size;
+  font-size: rem($font-size);
   font-weight: $font-weight;
 
-  line-height: $line-height-small;
+  line-height: rem($line-height-small);
+}
+
+@mixin text-truncate {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
