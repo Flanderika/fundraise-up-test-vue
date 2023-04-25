@@ -1,0 +1,43 @@
+.aside-menu {
+  @media #{$screen-laptop} {
+    position: sticky;
+    top: rem($gap-normal);
+  }
+
+  &__item {
+    border-bottom: $border-default;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__button {
+    @include text-normal($font-weight-regular);
+
+    display: flex;
+
+    cursor: pointer;
+
+    width: 100%;
+    padding: $gap-smaller $gap-medium;
+
+    transition: background-color $transition-duration $transition-function;
+
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $concrete;
+    }
+
+    &-text {
+      text-align: left;
+    }
+
+    &-icon + &-text,
+    &-text + &-icon {
+      margin-left: $gap-little;
+    }
+  }
+}
