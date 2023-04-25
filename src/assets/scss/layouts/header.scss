@@ -1,0 +1,11 @@
+.header {
+  @media #{$screen-laptop} {
+    margin-bottom: rem($gap-normal);
+
+    @include resetting-vertical-indentation-of-last;
+  }
+
+  &__title {
+    @include text-big($font-weight-regular);
+  }
+}
