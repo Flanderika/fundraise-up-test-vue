@@ -81,6 +81,8 @@
 
     color: $shark;
 
+    @include text-truncate;
+
     outline: none;
     border: none;
     background-color: transparent;

@@ -60,7 +60,7 @@
 
     flex-shrink: 0;
 
-    display: block;
+    display: flex;
 
     transition: color $transition-duration $transition-function,
       border-color $transition-duration $transition-function,

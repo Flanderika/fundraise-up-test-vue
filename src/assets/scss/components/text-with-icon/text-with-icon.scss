@@ -16,6 +16,18 @@
     display: flex;
   }
 
+  &__text {
+    &--size {
+      &-normal {
+        @include text-normal($font-weight-regular);
+      }
+
+      &-small {
+        @include text-small($font-weight-regular);
+      }
+    }
+  }
+  
   &__icon + &__text,
   &__text + &__icon {
     margin-left: rem($gap-little);
